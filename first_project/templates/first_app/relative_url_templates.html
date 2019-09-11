@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Welcome To Relative URL Templates</h1>
+        <!-- Below, the first_app is the app_name defined as global template tagging variable in url.py file -->
+        <!-- and other is the name of in the url pattern -->
+        <a href="{% url 'first_app:other' %}">The Other Page</a>
+        <br/>
+        <a href="{% url 'admin:index' %}">Link To Admin</a>
+        <!-- The above admin is already imported in the settings.py file with it's index view -->
+        <br/>
+        <a href="{% url 'index' %}">Link To Index</a>
+    </body>
+</html>
